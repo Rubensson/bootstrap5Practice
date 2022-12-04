@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sections */
+section {
+  margin-bottom: 100px;
+}
+
+/* Type of bikes */
+#bike-type-button {
+  cursor: pointer;
+}
+#bike-type-button:hover {
+  scale: 0.98;
+}
+/* Nav */
+.logo-bike {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: rgb(0, 110, 255);
+  padding: 5px;
+  border-radius: 50%;
+}
+/* Menu */
+#menu li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+#menu form > button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Image slider */
+.carousel-inner {
+  max-height: 39rem !important;
+  max-width: 1000px;
+}
+.carousel-inner img {
+}
+
+/* Equipo */
+#img-equipo {
+  max-height: 30rem !important;
+  width: 50%;
+}
+/* Map */
+.map {
+  background: url(https://img.freepik.com/vector-gratis/callejero-marcadores-sector-restauracion_23-2147618798.jpg?w=900&t=st=1668127784~exp=1668128384~hmac=d6b22f68ace5e08df74cf84e584a63a716c2743e3229d6852ae6dde1623d4970);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+#local {
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+/* Numeros local */
+#numeros-local {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#numeros-local div {
+  padding: 0 20px 0 0;
+  height: 48px;
+  text-align: left;
+}
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px;
+}
+#numeros-local p {
+  margin: 0;
+}
+
+/* Contact */
+/* -Bg-contact- */
+#bg-contact {
+  position: relative;
+  top: -130px;
+}
+#contact {
+  background-color: #1b2a4e;
+  min-height: 500px;
+  position: relative;
+}
+
+/* -Form- */
+#form-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fbfafa;
+  border-radius: 5px;
+}
+#form-title {
+  color: #3f3f3f;
+}
+
+/* Footer */
+
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#icons i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+/* ================ */
+/* RESPONSIVE */
+/* ================ */
+
+/* Responsive large screen */
+
+@media (max-width: 1200px) {
+  #into,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+/* Responsive Small screen */
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+  #img-equipo {
+    max-height: 20rem !important;
+    width: 90%;
+  }
+  #local {
+    flex-wrap: wrap;
+  }
+  .map img {
+    width: 100%;
+    height: auto;
+  }
+  #bg-contact {
+    top: -120px;
+  }
+}
+
+/* Responsive X-small screen */
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  #servicios-fila-1 {
+    width: 100% !important;
+  }
+}
